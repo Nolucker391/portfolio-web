@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             number: "02",
             title: "Mobile - App",
             description: "Мобильное приложение на основе КАИ.",
-            videoSrc: "../../assets/movies/moove.mov",
+            videoSrc: "../../assets/movies/1.mp4",
             imgSrc: "../../assets/images/phone.png",
         },
         {
