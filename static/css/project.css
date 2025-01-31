@@ -159,6 +159,8 @@
     /*width: 0%;*/
     width: 510px;
     height: 300px;
+    /*width: 75vh;*/
+    /*height: auto;*/
     display: flex;
     padding-top: 100px;
     padding-left: 20px;

@@ -1,9 +1,10 @@
 const width = window.innerWidth;
 const height = window.innerHeight;
-const aspectRatio = (width / height).toFixed(2);
-
-console.log(`Ширина: ${width}px, Высота: ${height}px`);
-console.log(`Соотношение сторон: ${aspectRatio}`);
+// const aspectRatio = (width / height).toFixed(2);
+//
+// console.log(`Ширина: ${width}px, Высота: ${height}px`);
+// console.log(`Соотношение сторон: ${aspectRatio}`);
+// alert(`Ширина: ${width}px, Высота: ${height}px`)
 
 window.addEventListener("resize", () => {
     const width = window.innerWidth;
@@ -15,42 +16,43 @@ window.addEventListener("resize", () => {
     console.log(`Соотношение сторон: ${aspectRatio}`);
 });
 
+
 document.addEventListener("DOMContentLoaded", () => {
     const content = [
         {
             number: "01",
             title: "MeGAno - sHop",
             description: "Интернет - магазин Мегано.",
-            videoSrc: "../portfolio-web/assets/movies/effects.MOV",
-            imgSrc: "../portfolio-web/assets/images/мак.png",
+            videoSrc: "../../assets/movies/effects.MOV",
+            imgSrc: "../../assets/images/мак.png",
         },
         {
             number: "02",
             title: "Mobile - App",
             description: "Мобильное приложение на основе КАИ.",
-            videoSrc: "../portfolio-web/assets/movies/moove.mov",
-            imgSrc: "../portfolio-web/assets/images/phone.png",
+            videoSrc: "../../assets/movies/moove.mov",
+            imgSrc: "../../assets/images/phone.png",
         },
         {
             number: "03",
             title: "tWitteR - clone",
             description: "Микросервис - с функционалом твиттера.",
-            videoSrc: "../portfolio-web/assets/movies/coding.MOV",
-            imgSrc: "../portfolio-web/assets/images/мак.png",
+            videoSrc: "../../assets/movies/coding.MOV",
+            imgSrc: "../../assets/images/мак.png",
         },
         {
             number: "04",
             title: "teleGRAM - boT",
             description: "Бот - для поиска актуальных отелей.",
-            videoSrc: "../portfolio-web/assets/movies/Itachi-Uchiha-Moonlight-Killer.mp4",
-            imgSrc: "../portfolio-web/assets/images/phone.png",
+            videoSrc: "../../assets/movies/Itachi-Uchiha-Moonlight-Killer.mp4",
+            imgSrc: "../../assets/images/phone.png",
         },
         {
             number: "05",
             title: "siMplE - WEb",
             description: "Первое знакомство с html/css.",
-            videoSrc: "../portfolio-web/assets/movies/Itachi-Uchiha-Moonlight-Killer.mp4",
-            imgSrc: "../portfolio-web/assets/images/iMac1.png",
+            videoSrc: "../../assets/movies/Itachi-Uchiha-Moonlight-Killer.mp4",
+            imgSrc: "../../assets/images/iMac1.png",
         },
     ];
 
