@@ -5,7 +5,6 @@
     align-items: center;
     color: #37eacf;
     position: relative;
-
 }
 
 @font-face {
@@ -17,9 +16,12 @@
 
 .about-section h1 {
     font-family: 'Luminari', serif;
-    font-weight: 900;
-    font-size: 100px;
-    max-width: 1150px;
+    /*width: 100%;*/
+    /*font-weight: 900;*/
+    /*font-size: 100px;*/
+    /*max-width: 1150px;*/
+    /*font-size: 7vw;*/
+    font-size: calc(5vw + 3.5vh);
     text-transform: uppercase;
     position: relative;
 }
@@ -37,20 +39,32 @@
     /*gap: 25px;*/
 }
 
-.first-box, .second-box {
-    background-color: rgba(5, 4, 4, 0);
-    border-radius: 70px;
-    border: 3px solid rgba(255, 255, 255, 0.42);
+.first-box {
+    /*background-color: rgba(5, 4, 4, 0);*/
+    border-radius: 5vw;
+    border: 0.2vw solid rgba(255, 255, 255, 0.42);
     width: 60%;
     height: 70vh;
     display: flex;
     flex-direction: row-reverse;
     /*gap: 10px;*/
     position: relative;
-    overflow: hidden; /* Обрезаем все, что выходит за пределы блока */
     opacity: 1; /* Начальная видимость */
     transition: opacity 0.5s ease-in-out;
 }
+.content-box {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    flex-direction: row-reverse;
+    overflow: hidden;
+    gap: 1rem;
+    position: relative;
+    /*padding-right: 40px;*/
+    /*padding-right: 40px;*/
+    padding: 2vh 0.7vw 11vh;
+}
+/*overflow: hidden; !* Обрезаем все, что выходит за пределы блока *!*/
 
 .first-box::before {
     content: "";
@@ -64,13 +78,14 @@
 }
 
 .about-text {
+    background: red;
     /*padding-left: 30px;*/
     /*font-family: 'Londrina Shadow', cursive;*/
     font-family: 'Luminari', serif;
 
-    padding-left: 40px;
-
-    font-size: 20px;
+    padding-left: 3vw;
+    /*padding-left: 40px;*/
+    font-size: 3vh;
     color: white;
     width: 40%;
     /*background: red;*/
@@ -79,18 +94,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    text-align: right;
 }
 
 .about-text p {
     color: #37eacf;
     transition: transform 0.5s ease-in-out;
-
 }
 
 .about-text h2 {
     font-family: 'Major Mono Display', sans-serif;
-    font-size: 50px;
+    font-size: calc(2vw + 3vh);
+    /*font-size: 7vh;*/
     /*padding-left: 10px;*/
     /*display: flex;*/
     /*text-align: right;*/
@@ -98,16 +114,17 @@
     /*font-weight: bold; !* Добавляем жирное начертание *!*/
     transition: transform 0.5s ease-in-out;
 
-
 }
 
 .number {
     font-family: 'Londrina Shadow', cursive;
-    font-size: 130px;
+    /*font-size: 20vh;*/
+    font-size: calc(7vw + 5.5vh);
     position: absolute;
-    top: 90px; /* Подстройте, если нужно */
-    right: 1px;
-    transform: translateX(-220px);
+    top: 0; /* Подстройте, если нужно */
+    /*right: 1;*/
+    /*translate: -50%;*/
+    transform: translate(30%, -130%);
     z-index: 2;
     /* Маска для эффекта плавного исчезновения снизу */
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 1%, rgba(0,0,0,0) 50%);
@@ -139,6 +156,7 @@
 }
 
 
+
 /*.first-box img {*/
 /*    !*padding: 20px;*!*/
 /*    border-radius: 25px;*/
@@ -153,17 +171,17 @@
 
 
 
-.first-box img, .second-box img {
+.first-box img, .first-box video {
+    transform: translateY(35%);
     /*padding: 20px;*/
     border-radius: 25px;
     /*width: 0%;*/
-    width: 510px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     /*width: 75vh;*/
     /*height: auto;*/
     display: flex;
-    padding-top: 100px;
-    padding-left: 20px;
+    /*padding-top: 100px;*/
     position: relative;
     z-index: 1; /* Изображение будет поверх видео */
     transition: transform 0.5s ease-in-out;
@@ -178,24 +196,24 @@
 }
 
 .image-video-container {
+    align-items: center;
+    background-color: #37eacf;
     position: relative;
-    width: 500px;  /* Размер контейнера */
-    height: 300px; /* Размер контейнера */
+    width: calc(100vw + 3.5vh);  /* Размер контейнера */
+    height: auto; /* Размер контейнера */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .background-video {
     position: absolute;
-    top: 18vh;
-    left: 0;
-    width: 400px;
-    height: 230px;
-    object-fit: cover;
-    transform: translateX(80px);
+    /*top: 18vh;*/
+    /*left: 0;*/
+    /*width: 75%;*/
+    /*height: auto;*/
+    /*transform: translateX(4.05vw);*/
     z-index: -1; /* Видео будет на фоне */
     transition: opacity 0.5s ease-in-out;
-
+    object-fit: cover;
 }
 
 /* Стрелки по бокам */
