@@ -1,0 +1,57 @@
+.special-style .background-video {
+    border-radius: 14px;
+    width: 135px;
+    height: 310px;
+    position: absolute;
+    transform: translate(207px, -28px); /* X = 207px, Y = 50px */
+}
+
+.special-style .first-box {
+    flex-direction: row;
+}
+
+.special-style .image {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.1); /* Увеличение изображения */
+}
+
+.special-style .about-text h2 {
+    transform: translateY(-100px);
+    font-size: 60px; /* Увеличенный шрифт заголовка */
+}
+
+.special-style .about-text p {
+    transform: translateX(100px);
+}
+
+.special-style-for3 .about-text h2 {
+    font-size: 41px;
+}
+
+
+
+.special-style-for5 .first-box {
+    flex-direction: row;
+}
+
+.special-style-for5 .about-text h2 {
+    font-size: 45px;
+    transform: translateY(-100px);
+}
+
+.special-style-for5 .about-text p {
+    transform: translateY(50px);
+}
+
+.special-style-for5 .image {
+    transform: translate(-30px);
+    width: 460px;
+    height: 320px;
+}
+
+.special-style-for5 .background-video {
+    width: 420px;
+    height: 209px;
+    position: absolute;
+    transform: translate(10px, -12px); /* X = 207px, Y = 50px */
+}

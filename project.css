@@ -1,0 +1,238 @@
+.about-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #37eacf;
+    position: relative;
+
+}
+
+@font-face {
+    font-family: 'Luminari';
+    src: url("/Users/skillbox/WebstormProjects/port/fonts/Luminari.ttf") format('ttf'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+.about-section h1 {
+    font-family: 'Luminari', serif;
+    font-weight: 900;
+    font-size: 100px;
+    max-width: 1150px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.about-box {
+    /*background: #777a7a;*/
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+    /*align-items: center;*/
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    /*gap: 25px;*/
+}
+
+.first-box, .second-box {
+    background-color: rgba(5, 4, 4, 0);
+    border-radius: 70px;
+    border: 3px solid rgba(255, 255, 255, 0.42);
+    width: 60%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row-reverse;
+    /*gap: 10px;*/
+    position: relative;
+    overflow: hidden; /* Обрезаем все, что выходит за пределы блока */
+    opacity: 1; /* Начальная видимость */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.first-box::before {
+    content: "";
+    position: absolute;
+    top: 87%; /* Размещаем полоску по середине блока */
+    left: 3px; /* Оставляем отступ от левого края, чтобы полоска не выходила за пределы границ */
+    width: calc(100% - 6px); /* Ширина полоски будет немного меньше ширины блока (с учетом border) */
+    height: 3px; /* Высота полоски */
+    background-color: rgba(255, 255, 255, 0.42); /* Цвет полоски */
+    z-index: 1; /* Полоска будет поверх фона, но под изображением */
+}
+
+.about-text {
+    /*padding-left: 30px;*/
+    /*font-family: 'Londrina Shadow', cursive;*/
+    font-family: 'Luminari', serif;
+
+    padding-left: 40px;
+
+    font-size: 20px;
+    color: white;
+    width: 40%;
+    /*background: red;*/
+    /*background-color: rgba(112, 106, 106, 0.36);*/
+    /*backdrop-filter: blur(10px);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text p {
+    color: #37eacf;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.about-text h2 {
+    font-family: 'Major Mono Display', sans-serif;
+    font-size: 50px;
+    /*padding-left: 10px;*/
+    /*display: flex;*/
+    /*text-align: right;*/
+    transform: translateY(-40px);
+    /*font-weight: bold; !* Добавляем жирное начертание *!*/
+    transition: transform 0.5s ease-in-out;
+
+
+}
+
+.number {
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 130px;
+    position: absolute;
+    top: 90px; /* Подстройте, если нужно */
+    right: 1px;
+    transform: translateX(-220px);
+    z-index: 2;
+    /* Маска для эффекта плавного исчезновения снизу */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 1%, rgba(0,0,0,0) 50%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 1%, rgba(0,0,0,0) 70%);
+    transition: opacity 0.5s ease;
+}
+
+.number.fade {
+    opacity: 0; /* Элемент исчезает при переключении */
+}
+
+.first-box a, .second-box a {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.github-link i {
+    font-size: 24px; /* Размер иконки */
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+
+
+/*.first-box img {*/
+/*    !*padding: 20px;*!*/
+/*    border-radius: 25px;*/
+/*    !*width: 0%;*!*/
+/*    width: 600px;*/
+/*    height: 300px;*/
+/*    display: flex;*/
+/*    padding-top: 100px;*/
+/*    padding-left: 20px;*/
+/*    position: relative;*/
+/*}*/
+
+
+
+.first-box img, .second-box img {
+    /*padding: 20px;*/
+    border-radius: 25px;
+    /*width: 0%;*/
+    width: 510px;
+    height: 300px;
+    display: flex;
+    padding-top: 100px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 1; /* Изображение будет поверх видео */
+    transition: transform 0.5s ease-in-out;
+}
+
+.first-box.changed img {
+    animation: moveImageLeft 0.5s ease-out;
+}
+
+.second-box.changed img {
+    animation: moveImageRight 0.5s ease-out;
+}
+
+.image-video-container {
+    position: relative;
+    width: 500px;  /* Размер контейнера */
+    height: 300px; /* Размер контейнера */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.background-video {
+    position: absolute;
+    top: 18vh;
+    left: 0;
+    width: 400px;
+    height: 230px;
+    object-fit: cover;
+    transform: translateX(80px);
+    z-index: -1; /* Видео будет на фоне */
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+/* Стрелки по бокам */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.42);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2; /* Чтобы стрелки были поверх контента */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавные анимации */
+}
+
+.left-arrow {
+    left: 10px; /* Стрелка слева */
+}
+
+.right-arrow {
+    right: 10px; /* Стрелка справа */
+}
+
+/* Эффект выделения и свечения при наведении */
+.arrow:hover {
+    color: #37eacf;
+    transform: translateY(-60%) scale(1.5); /* Увеличиваем размер стрелки */
+    box-shadow: 0 0 20px rgb(55, 234, 207); /* Свечение */
+}
+
+/* Иконки стрелок */
+.arrow i {
+    font-size: 24px;
+    color: white;
+}
+
+
+
