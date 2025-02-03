@@ -19,40 +19,43 @@ window.addEventListener("resize", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const content = [
+
         {
             number: "01",
             title: "MeGAno - sHop",
             description: "Интернет - магазин Мегано.",
-            videoSrc: "../../assets/movies/effects.MOV",
-            imgSrc: "../../assets/images/мак.png",
+            // videoSrc: "../assets/movies/effects.MOV",
+            videoSrc: "../assets/movies/1.mp4",
+
+            imgSrc: "../assets/images/мак.png",
         },
         {
             number: "02",
             title: "Mobile - App",
             description: "Мобильное приложение на основе КАИ.",
-            videoSrc: "../../assets/movies/1.mp4",
-            imgSrc: "../../assets/images/phone.png",
+            videoSrc: "../assets/movies/1.mp4",
+            imgSrc: "../assets/images/phone.png",
         },
         {
             number: "03",
             title: "tWitteR - clone",
             description: "Микросервис - с функционалом твиттера.",
-            videoSrc: "../../assets/movies/coding.MOV",
-            imgSrc: "../../assets/images/мак.png",
+            videoSrc: "../assets/movies/coding.MOV",
+            imgSrc: "../assets/images/мак.png",
         },
         {
             number: "04",
             title: "teleGRAM - boT",
             description: "Бот - для поиска актуальных отелей.",
-            videoSrc: "../../assets/movies/Itachi-Uchiha-Moonlight-Killer.mp4",
-            imgSrc: "../../assets/images/phone.png",
+            videoSrc: "../assets/movies/Itachi-Uchiha-Moonlight-Killer.mp4",
+            imgSrc: "../assets/images/phone.png",
         },
         {
             number: "05",
             title: "siMplE - WEb",
             description: "Первое знакомство с html/css.",
-            videoSrc: "../../assets/movies/Itachi-Uchiha-Moonlight-Killer.mp4",
-            imgSrc: "../../assets/images/iMac1.png",
+            videoSrc: "../assets/movies/Itachi-Uchiha-Moonlight-Killer.mp4",
+            imgSrc: "../assets/images/iMac1.png",
         },
     ];
 

@@ -1,14 +1,16 @@
 .special-style .background-video {
     border-radius: 14px;
-    width: 135px;
-    height: 310px;
+    width: 28.5% !important;
+    height: 30vh !important;
     position: absolute;
-    transform: translate(207px, -28px); /* X = 207px, Y = 50px */
+    /*transform: translate(207px, -28px); !* X = 207px, Y = 50px *!*/
 }
 
-.special-style .first-box {
+
+.special-style .content-box {
     flex-direction: row;
 }
+
 
 .special-style .image {
     transition: transform 0.5s ease-in-out;
