@@ -19,7 +19,6 @@ window.addEventListener("resize", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const content = [
-
         {
             number: "01",
             title: "MeGAno - sHop",
@@ -77,16 +76,15 @@ document.addEventListener("DOMContentLoaded", () => {
         videoElement.src = currentContent.videoSrc;
         imgElement.src = currentContent.imgSrc;
 
-        section.classList.remove("special-style", "special-style-for3", "special-style-for5");
+        section.classList.remove("special-style", "special-style-for4", "special-style-for5");
 
-        if (currentContent.number === "02" || currentContent.number === "04") {
+        if (currentContent.number === "02") {
             section.classList.add("special-style");
-        } else if (currentContent.number === "03") {
-            section.classList.add("special-style-for3");
+        } else if (currentContent.number === "04") {
+            section.classList.add("special-style-for4");
         } else if (currentContent.number === "05") {
             section.classList.add("special-style-for5");
         }
-
     }
 
     // Обработчик события для стрелки вправо
