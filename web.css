@@ -1,0 +1,112 @@
+@import url("header.css");
+
+.content-section {
+    position: absolute;   /* Позиционируем относительно родителя */
+    color: white;
+    width: 100%;          /* Ширина на всю страницу */
+    height: 100vh;        /* Высота на всю страницу */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-box {
+    /*background: #d87171;*/
+    display: flex;
+    width: 35%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.text-box {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-content {
+    font-family: 'Jura', sans-serif;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    border-radius: 7px;
+    /*border: 5px 2px 3px 4px #88e4e4 solid;*/
+    border-top: 45px solid #88e4e4;
+    border-bottom: 10px solid #88e4e4;
+    border-left: 10px solid #88e4e4;
+    border-right: 10px solid #88e4e4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.text-block {
+    padding: 5%;
+    font-size: calc(0.5vh + 1.5vw);
+}
+
+.name {
+    white-space: nowrap;
+    font-size: calc(3vh + 1vw);
+    font-family: 'Arial Black', sans-serif;
+}
+
+.subtitle {
+    font-family: 'Arbutus', sans-serif;
+    font-size: calc(0.5vh + 1vw);
+    transform: translateY(150%);
+    color: #466e6e;
+}
+
+.intro {
+    font-size: calc(0.4vh + 1vw);
+    color: #9f9d9d;
+}
+
+.buttons {
+    font-size: calc(0.8vh + 1vw);
+    color: #466e6e;
+}
+
+.code-box {
+    font-size: calc(0.5vw + 0.8vh);
+    /*width: 10vh;*/
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    right: 0;
+    bottom: 0;
+    /*z-index: 0;*/
+    transform: translate(6%, 65%);
+    opacity: 30%;
+}
+
+/*.image-box {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    position: relative;*/
+/*}*/
+
+/*.image-box img {*/
+/*    position: absolute;*/
+/*    top: 100px; !* Смещение вниз от header *!*/
+/*    right: 50px; !* Смещение влево *!*/
+/*    width: 250px;*/
+/*    height: auto;*/
+/*    z-index: 2;*/
+/*    border-radius: 15px;*/
+/*    box-shadow:*/
+/*            inset 0 5px 10px rgba(0, 0, 0, 0.6),*/
+/*            0 10px 15px rgba(0, 0, 0, 0.5),*/
+/*            0 0 15px rgb(55, 230, 203),*/
+/*            0 0 30px rgba(250, 246, 246, 0.96),*/
+/*            0 0 45px rgba(88, 234, 234, 0.2);*/
+/*    transform: perspective(800px) rotateY(-20deg);*/
+/*    transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+/*}*/

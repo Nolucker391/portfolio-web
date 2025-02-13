@@ -1,0 +1,68 @@
+body {
+    padding: 0 5%; /* Добавляем отступы по бокам */
+    background: #000000;
+    scroll-behavior: smooth; /*плавные переходы*/
+}
+
+.content-container {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+header {
+    font-family: 'Jura', sans-serif;
+    position: relative;
+    width: 100%;
+    /*height: 5vh;*/
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    background-color: rgba(100, 172, 168, 0.5); /*0.2 - процент прозрачности*/
+}
+.head-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.head-left a {
+    font-size: 3vh !important; /* Здесь меняйте на нужный вам размер */
+}
+
+
+.head-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.head-right a {
+    font-size: 1.8vh !important; /* Здесь меняйте на нужный вам размер */
+}
+
+.head-right a, .head-left a {
+    text-decoration: none;
+    padding: 25px;
+    color: white;
+    font-size: 15px;
+    text-shadow: 0 0 5px rgba(238, 244, 244, 0.98),
+    0 0 10px rgba(255, 255, 255, 0.6),
+    0 0 15px rgba(255, 255, 255, 0.4); /* Эффект свечения */
+    transition: text-shadow 0.3s ease, color 0.3s ease; /* Анимация изменений */
+}
+
+.head-right a:hover, .head-left a:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+    0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 30px rgba(255, 255, 255, 0.6);
+    color: #ffffff; /* Дополнительный эффект яркости */
+}
+
