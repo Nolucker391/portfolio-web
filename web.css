@@ -1,4 +1,6 @@
 @import url("header.css");
+@import url("icons-window.css");
+@import url("buttons.css");
 
 .content-section {
     position: absolute;   /* Позиционируем относительно родителя */
@@ -31,17 +33,33 @@
     width: 50%;
     height: 50%;
     position: absolute;
-    border-radius: 7px;
-    /*border: 5px 2px 3px 4px #88e4e4 solid;*/
-    border-top: 45px solid #88e4e4;
-    border-bottom: 10px solid #88e4e4;
-    border-left: 10px solid #88e4e4;
-    border-right: 10px solid #88e4e4;
+    box-sizing: border-box;
+
+    border-radius: 7px; /* Применяем радиус скругления */
+    background-color: rgba(0, 0, 0, 0.91); /* Цвет фона для содержимого */
+
+    box-shadow:
+            inset 0 5px 10px rgba(0, 0, 0, 0.6),
+            0 20px 25px rgba(81, 79, 79, 0.7),
+            0 0 15px rgb(80, 223, 201),
+            0 0 30px rgba(7, 7, 7, 0.4),
+            0 0 45px rgba(102, 230, 230, 0.2);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
+
+.window-content::before {
+    content: "";
+    position: absolute;
+    top: -45px; left: -10px;
+    right: -10px; bottom: -10px;
+    border-radius: 13px; /* Увеличиваем радиус для псевдоэлемента */
+    background: linear-gradient(to bottom, #50dfc9, #9EB2F6);
+    z-index: -1; /* Псевдоэлемент будет под основным содержимым */
+}
+
 
 .text-block {
     padding: 5%;
@@ -109,4 +127,29 @@
 /*            0 0 45px rgba(88, 234, 234, 0.2);*/
 /*    transform: perspective(800px) rotateY(-20deg);*/
 /*    transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+/*}*/
+
+/*.window-content {*/
+/*    font-family: 'Jura', sans-serif;*/
+/*    width: 50%;*/
+/*    height: 50%;*/
+/*    position: absolute;*/
+/*    box-sizing: border-box;*/
+
+/*    border-radius: 7px !important;*/
+/*    border-top: 45px solid #50dfc9 !important;*/
+/*    border: 10px solid transparent;*/
+/*    border-image: linear-gradient(to bottom, #50dfc9, #9EB2F6); !* Линейный градиент *!*/
+/*    border-image-slice: 1; !* Растягиваем градиент по всей рамке *!*/
+/*  */
+/*    box-shadow:*/
+/*            inset 0 5px 10px rgba(0, 0, 0, 0.6),*/
+/*            0 20px 25px rgba(81, 79, 79, 0.7),*/
+/*            0 0 15px rgb(80, 223, 201),*/
+/*            0 0 30px rgba(7, 7, 7, 0.4),*/
+/*            0 0 45px rgba(102, 230, 230, 0.2);*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: flex-start;*/
+/*    justify-content: center;*/
 /*}*/

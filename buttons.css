@@ -1,0 +1,52 @@
+.buttons {
+    margin-top: 50px; /* Отступ сверху */
+    display: flex;
+    gap: 15px; /* Промежуток между кнопками */
+    transition: text-shadow 0.3s ease, color 0.3s ease; /* Анимация изменений */
+}
+
+.button-message-me {
+    text-decoration: none;
+    width: 120px; /* Задаем фиксированную ширину */
+    height: auto; /* Задаем фиксированную высоту */
+    background: none;
+    color: #37eacf;
+    border: 2px solid #37eacf; /* Белая граница */
+    padding: 10px 20px; /* Внутренние отступы */
+    font-size: 16px; /* Размер текста */
+    border-radius: 10px; /* Закругленные углы */
+    cursor: pointer; /* Изменение курсора на указатель */
+    position: relative; /* Для правильной работы псевдо-элемента */
+    overflow: hidden; /* Скрываем все, что выходит за пределы кнопки */
+    text-align: center; /* Центрируем текст */
+}
+
+.button-message-me::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Ширина заливки — вся кнопка */
+    height: 100%; /* Высота заливки — вся кнопка */
+    background-color: #37eacf; /* Цвет заливки */
+    transform-origin: bottom left; /* Начало анимации с нижнего левого угла */
+    transform: scaleX(0) scaleY(0); /* Начинаем с 0 размера */
+    transition: transform 0.6s ease-in-out; /* Плавная анимация */
+    z-index: -1; /* Задний план, чтобы текст был видим */
+}
+
+.button-message-me:hover::before {
+    transform: scaleX(1) scaleY(1); /* Анимация растяжения до размера кнопки */
+}
+
+.button-message-me:hover {
+    color: rgba(0, 0, 0, 0.91); /* Меняем цвет текста на черный */
+    border-color: transparent; /* Убираем видимую границу */
+}
+
+.button-message-me:hover {
+    text-shadow: 0 0 10px rgb(55, 230, 203),
+    0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 30px rgba(255, 255, 255, 0.6);
+    color: rgb(5, 4, 4); /* Дополнительный эффект яркости */
+}

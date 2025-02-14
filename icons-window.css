@@ -1,0 +1,88 @@
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    transform: translateY(-125%) translateX(5%);
+}
+
+.ellipse {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ED5252;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line1 {
+    position: absolute;
+    width: 15px;
+    border: 2px solid #000000;
+    transform: rotate(45deg);
+}
+
+
+.line2 {
+    position: absolute;
+    width: 15px;
+    border: 2px solid #000000;
+    transform: rotate(-45.61deg);
+}
+
+
+.ellipse2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #E8BD51;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    position: absolute;
+    width: 15px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+
+.ellipse3 {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #3ED941;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.polygon {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background: #000000;
+    clip-path: polygon(100% 0%, 50% 50%, 100% 100%);
+    transform: translateY(1px) translateX(-4px) rotate(45deg);
+    top: 0;
+    left: 0;
+}
+
+.polygon2 {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background: #000000;
+    clip-path: polygon(100% 0%, 50% 50%, 100% 100%);
+    transform: translateY(-1px) translateX(4px) rotateY(180deg) rotate(-45deg); /* Эта строка переворачивает стрелку */
+    bottom: 0;
+    right: 0;
+}
+
+
+
