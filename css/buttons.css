@@ -3,6 +3,8 @@
     display: flex;
     gap: 15px; /* Промежуток между кнопками */
     transition: text-shadow 0.3s ease, color 0.3s ease; /* Анимация изменений */
+    position: relative;
+    z-index: 2;
 }
 
 .button-message-me {
@@ -13,7 +15,7 @@
     color: #37eacf;
     border: 2px solid #37eacf; /* Белая граница */
     padding: 10px 20px; /* Внутренние отступы */
-    font-size: 16px; /* Размер текста */
+    font-size: 21px; /* Размер текста */
     border-radius: 10px; /* Закругленные углы */
     cursor: pointer; /* Изменение курсора на указатель */
     position: relative; /* Для правильной работы псевдо-элемента */

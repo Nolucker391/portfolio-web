@@ -102,10 +102,8 @@
 }
 
 .about-text p {
-    font-family: 'Jura', sans-serif;
     color: #37eacf;
     transition: transform 0.5s ease-in-out;
-    text-align: left;
 }
 
 .about-text h2 {
@@ -133,7 +131,7 @@
     z-index: 2;
     /* Маска для эффекта плавного исчезновения снизу */
     /*-webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 1%, rgba(0,0,0,0) 50%);*/
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 1%, rgba(0,0,0,0) 65%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 1%, rgba(0,0,0,0) 70%);
     transition: opacity 0.5s ease;
 }
 
@@ -190,7 +188,6 @@
 }
 
 .image-video {
-
     position: absolute;
     width: calc(32vw + 3.5vh);
     /*width: 100%;*/
@@ -202,8 +199,6 @@
 }
 
 .image-video img {
-    /*background-color: #37eacf;*/
-
     width: calc(32vw + 4.5vh);
     object-fit: cover;
     /*transform: translateY(5vh);*/
@@ -270,7 +265,5 @@
     color: white;
 }
 
-.content-box a {
-    font-family: 'Jura', sans-serif;
-}
+
 

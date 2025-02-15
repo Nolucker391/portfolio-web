@@ -1,0 +1,57 @@
+/*Image animation*/
+.fade-in {
+    animation: fade-in 1.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*window animation*/
+
+
+.bounce-in-right {
+    animation: bounce-in-right 1.1s ease-out forwards; /* Плавная анимация с правой стороны */
+}
+
+@keyframes bounce-in-right {
+    0% {
+        transform: translateX(100%); /* Исходное положение — за пределами экрана справа */
+        opacity: 0; /* Начинаем с полной прозрачности */
+    }
+    60% {
+        transform: translateX(-15%); /* Переход к промежуточному положению, эффект отскока */
+        opacity: 0.8; /* Немного видно */
+    }
+    100% {
+        transform: translateX(0); /* Элемент в своем финальном положении */
+        opacity: 1; /* Полностью видимый */
+    }
+}
+
+@keyframes autoBlurAnimation {
+    0% {
+        filter: blur(40px);
+    }
+    40%,60% {
+        filter: blur(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100% {
+        filter: blur(40px);
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+.autoBlur {
+    animation: autoBlurAnimation linear both;
+    animation-timeline: view();
+}
+
