@@ -1,0 +1,41 @@
+.scroll-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    /*transform: translateY(-190%);*/
+}
+.scrolling {
+    width: calc(2vh + 2vw);
+    height: calc(2vh + 2vw);
+    border: 2px solid #86eddd;
+    border-radius: 50%;
+    animation: down 1.5s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scrolling::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '';
+    position: absolute;
+    width: calc(0.5vh + 0.5vw);
+    height: calc(0.5vh + 0.5vw);
+    border-left: 2px solid #86eddd;
+    border-bottom: 2px solid #86eddd;
+    transform: rotate(-45deg);
+}
+@keyframes down {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateY(15px);
+    }
+    40% {
+        transform: translate(0);
+    }
+}

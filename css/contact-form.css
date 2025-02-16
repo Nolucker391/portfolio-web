@@ -1,0 +1,85 @@
+.contact-container h1 {
+    font-size: calc(3.5vw + 3.5vh);
+    display: flex;
+    position: absolute;
+    top: 0;
+    text-transform: uppercase;
+    font-family: 'Rubik Mono One', sans-serif;
+
+}
+
+.contact-container h4 {
+    font-size: calc(1vw + 1vh);
+    color: #469191;
+    text-align: center;
+}
+
+
+
+.contact-container button {
+    font-family: 'Jura', sans-serif;
+}
+
+
+/* LINES */
+.contact-line {
+    border-bottom: 4px solid #ffffff;
+    width: 50%;
+    display: flex;
+    border-radius: 20px;
+    position: absolute;
+    transform: translateY(-25vh);
+}
+
+
+/* INPUTS */
+.contact-container input {
+    font-family: 'Jura', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+    background-color: #1f1f23; /* Цвет фона */
+    font-size: 16px; /* Размер текста */
+    border: none;
+}
+
+.contact-container input:focus {
+    outline: none;
+    border-color: #466e6e !important; /* Изменение цвета границы при фокусе */
+    background-color: #aab1b1; /* Светлый фон при фокусе */
+}
+
+.contact-description {
+    height: 20%;
+}
+
+
+
+
+
+/*BUTTONS*/
+
+.button-contact {
+    font-family: 'Jura', sans-serif;
+    background-color: #232328; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    align-self: flex-end;
+    font-size: calc(1vw + 1vh);
+    /*transform: translateX(-25%);*/
+}
+
+.button-contact:hover {
+    background-color: #466e6e; /* Цвет фона при наведении */
+}

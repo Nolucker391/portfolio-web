@@ -1,56 +1,89 @@
-/* Контейнер, в котором будет находиться текст */
+/*!* Контейнер, в котором будет находиться текст *!*/
+/*body {*/
+/*    padding: 0 5%; !* Добавляем отступы по бокам *!*/
+/*    background: #222;*/
+/*    scroll-behavior: smooth; !* Плавные переходы *!*/
+/*}*/
+
+/*.subtitle-container {*/
+/*    width: 100%;*/
+/*    height: 50vh;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*}*/
+
+/*.container {*/
+/*    color: #e5e5e5;*/
+/*    font-size: 2.26rem;*/
+/*    text-transform: uppercase;*/
+/*    height: 100vh;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.animation {*/
+/*    height:50px;*/
+/*    overflow:hidden;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.animation > div {*/
+/*    padding: 0.25rem 0.75rem;*/
+/*    height:2.81rem;*/
+/*    margin-bottom: 2.81rem;*/
+/*    display:flex;*/
+/*}*/
+
+/*.animation div:first-child {*/
+/*    animation: text-animation 8s infinite;*/
+/*}*/
+
+/*@keyframes text-animation {*/
+/*    0% {margin-top: 0;}*/
+/*    10% {margin-top: 0;}*/
+/*    20% {margin-top: -5.62rem;}*/
+/*    30% {margin-top: -5.62rem;}*/
+/*    40% {margin-top: -11.24rem;}*/
+/*    60% {margin-top: -11.24rem;}*/
+/*    70% {margin-top: -5.62rem;}*/
+/*    80% {margin-top: -5.62rem;}*/
+/*    90% {margin-top: 0;}*/
+/*    100% {margin-top: 0;}*/
+/*}*/
 body {
-    padding: 0 5%; /* Добавляем отступы по бокам */
-    background: #222;
-    scroll-behavior: smooth; /* Плавные переходы */
-}
-
-.subtitle-container {
-    width: 100%;
-    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-}
-
-.container {
-    color: #e5e5e5;
-    font-size: 2.26rem;
-    text-transform: uppercase;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    background: #222;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
 }
 
-.animation {
-    height:50px;
-    overflow:hidden;
-    display: flex;
-    flex-direction: column;
+.masked-text {
+    font-size: 6rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: url('https://images.unsplash.com/photo-1732535725600-f805d8b33c9c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: 200%; /* Enlarged for smooth animation */
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 5s infinite alternate linear;
 }
 
-.animation > div {
-    padding: 0.25rem 0.75rem;
-    height:2.81rem;
-    margin-bottom: 2.81rem;
-    display:flex;
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
-.animation div:first-child {
-    animation: text-animation 8s infinite;
-}
-
-@keyframes text-animation {
-    0% {margin-top: 0;}
-    10% {margin-top: 0;}
-    20% {margin-top: -5.62rem;}
-    30% {margin-top: -5.62rem;}
-    40% {margin-top: -11.24rem;}
-    60% {margin-top: -11.24rem;}
-    70% {margin-top: -5.62rem;}
-    80% {margin-top: -5.62rem;}
-    90% {margin-top: 0;}
-    100% {margin-top: 0;}
-}
