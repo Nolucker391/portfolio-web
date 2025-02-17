@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
             number: "05",
             title: "siMplE - WEb",
             description: "Первое знакомство с html/css.",
-            videoSrc: "../assets/movies/Itachi-Uchiha-Moonlight-Killer.mp4",
+            videoSrc: "../assets/movies/simpleWEB",
             imgSrc: "../assets/images/iMac1.png",
         },
     ];
