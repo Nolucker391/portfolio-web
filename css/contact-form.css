@@ -79,6 +79,7 @@
     font-size: 16px; /* Размер текста */
     border: none;
     margin: 7px;
+    color: #ffffff;
 }
 
 .contact-footer input:focus {
