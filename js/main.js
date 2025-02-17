@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             number: "02",
             title: "Mobile - App",
             description: "Мобильное приложение на основе КАИ.",
-            videoSrc: "../assets/movies/1.mp4",
+            videoSrc: "../assets/movies/app.mp4",
             imgSrc: "../assets/images/phone.png",
         },
         {
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
             number: "04",
             title: "teleGRAM - boT",
             description: "Бот - для поиска актуальных отелей.",
-            videoSrc: "../assets/movies/Itachi-Uchiha-Moonlight-Killer.mp4",
+            videoSrc: "../assets/movies/telegram.mp4",
             imgSrc: "../assets/images/phone.png",
         },
         {
