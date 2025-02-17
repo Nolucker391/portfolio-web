@@ -1,17 +1,58 @@
-.contact-container h1 {
+.left-content {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container {
+    font-family: 'Jura', sans-serif;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 95%;
+    position: relative;
+}
+
+.contact-header {
+    display: flex;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+.contact-header h1 {
     font-size: calc(3.5vw + 3.5vh);
     display: flex;
-    position: absolute;
-    top: 0;
     text-transform: uppercase;
     font-family: 'Rubik Mono One', sans-serif;
+}
 
+ /*LINES */
+.contact-line {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid #ffffff;
+    border-radius: 20px;
 }
 
 .contact-container h4 {
-    font-size: calc(1vw + 1vh);
+    font-size: calc(1.5vw + 1vh);
     color: #469191;
     text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -21,48 +62,41 @@
 }
 
 
-/* LINES */
-.contact-line {
-    border-bottom: 4px solid #ffffff;
-    width: 50%;
-    display: flex;
-    border-radius: 20px;
-    position: absolute;
-    transform: translateY(-25vh);
-}
-
-
-/* INPUTS */
-.contact-container input {
-    font-family: 'Jura', sans-serif;
+.contact-footer {
+    width: 100%;
+    height: calc(1.5vw + 22.5vh);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+/* INPUTS */
+.contact-footer input {
+    width: 95%;
+    font-family: 'Jura', sans-serif;
+    display: flex;
     padding: 10px;
-    width: 80%;
     background-color: #1f1f23; /* Цвет фона */
     font-size: 16px; /* Размер текста */
     border: none;
+    margin: 7px;
 }
 
-.contact-container input:focus {
+.contact-footer input:focus {
     outline: none;
     border-color: #466e6e !important; /* Изменение цвета границы при фокусе */
     background-color: #aab1b1; /* Светлый фон при фокусе */
 }
 
 .contact-description {
-    height: 20%;
+    min-height: 150px; /* Минимальная высота */
 }
-
-
 
 
 
 /*BUTTONS*/
 
 .button-contact {
+    margin-top: 5%;
     font-family: 'Jura', sans-serif;
     background-color: #232328; /* Цвет фона кнопки */
     color: #fff; /* Цвет текста кнопки */
