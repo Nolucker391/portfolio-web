@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             number: "03",
             title: "tWitteR - clone",
             description: "Микросервис - с функционалом твиттера.",
-            videoSrc: "../assets/movies/coding.MOV",
+            videoSrc: "../assets/movies/Twitter-flask.mp4",
             imgSrc: "../assets/images/мак.png",
         },
         {
