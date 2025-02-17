@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             number: "01",
             title: "MeGAno - sHop",
             description: "Интернет - магазин Мегано.",
-            videoSrc: "../assets/movies/movies.mp4",
+            videoSrc: "../assets/movies/MeganoShop.mp4",
 
             imgSrc: "../assets/images/мак.png",
         },
