@@ -1,11 +1,11 @@
 const width = window.innerWidth;
 const height = window.innerHeight;
 
-const aspectRatio = (width / height).toFixed(2);
-
-console.log(`Ширина: ${width}px, Высота: ${height}px`);
-console.log(`Соотношение сторон: ${aspectRatio}`);
-alert(`Ширина: ${width}px, Высота: ${height}px`)
+// const aspectRatio = (width / height).toFixed(2);
+//
+// console.log(`Ширина: ${width}px, Высота: ${height}px`);
+// console.log(`Соотношение сторон: ${aspectRatio}`);
+// alert(`Ширина: ${width}px, Высота: ${height}px`)
 
 window.addEventListener("resize", () => {
     const width = window.innerWidth;
