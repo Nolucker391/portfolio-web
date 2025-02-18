@@ -1,5 +1,4 @@
 .about-section {
-    /*background: #b1a7a7;*/
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -17,57 +16,39 @@
 
 .about-section h1 {
     font-family: 'Luminari', serif;
-    /*width: 100%;*/
-    /*font-weight: 900;*/
-    /*font-size: 100px;*/
-    /*max-width: 1150px;*/
-    /*font-size: 7vw;*/
     font-size: calc(5vw + 3.5vh);
     text-transform: uppercase;
     position: relative;
 }
 
 .about-box {
-    /*background: #777a7a;*/
-
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 100%;
-    /*align-items: center;*/
     display: flex;
     justify-content: center;
     position: relative;
-
-    /*gap: 25px;*/
 }
 
 .first-box {
-    /*background-color: rgba(184, 90, 90, 0);*/
     border-radius: 5vw;
     border: 0.2vw solid rgba(255, 255, 255, 0.42);
     width: calc(58vw - 4vh);
-    /*width: 60%;*/
-    /*height: ;*/
     display: flex;
     flex-direction: row-reverse;
-    /*gap: 10px;*/
     position: relative;
-    opacity: 1; /* Начальная видимость */
+    opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 .content-box {
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
     flex-direction: row-reverse;
     overflow: hidden;
     gap: 1rem;
     position: relative;
-    /*padding-right: 40px;*/
-    /*padding-right: 40px;*/
     padding: 2vh 0.7vw 11vh;
     width: 100%;
 }
-/*overflow: hidden; !* Обрезаем все, что выходит за пределы блока *!*/
 
 .first-box::before {
     content: "";
@@ -81,20 +62,11 @@
 }
 
 .about-text {
-
-    /*background: red;*/
-    /*padding-left: 30px;*/
-    /*font-family: 'Londrina Shadow', cursive;*/
     font-family: 'Luminari', serif;
     padding-right: 1vw;
-    /*padding-left: 3vw;*/
-    /*padding-left: 40px;*/
     font-size: 3vh;
     color: white;
     width: 40%;
-    /*background: red;*/
-    /*background-color: rgba(112, 106, 106, 0.36);*/
-    /*backdrop-filter: blur(10px);*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,24 +84,16 @@
 .about-text h2 {
     font-family: 'Major Mono Display', sans-serif;
     font-size: calc(2vw + 3vh);
-    /*font-size: 7vh;*/
-    /*padding-left: 10px;*/
-    /*display: flex;*/
-    /*text-align: right;*/
     transform: translateY(-40px);
-    /*font-weight: bold; !* Добавляем жирное начертание *!*/
     transition: transform 0.5s ease-in-out;
 
 }
 
 .number {
     font-family: 'Londrina Shadow', cursive;
-    /*font-size: 20vh;*/
     font-size: calc(7vw + 5.5vh);
     position: absolute;
     top: 0; /* Подстройте, если нужно */
-    /*right: 1;*/
-    /*translate: -50%;*/
     transform: translate(30%, -130%);
     z-index: 2;
     /* Маска для эффекта плавного исчезновения снизу */
@@ -161,21 +125,6 @@
     margin-right: 10px; /* Отступ между иконкой и текстом */
 }
 
-
-
-/*.first-box img {*/
-/*    !*padding: 20px;*!*/
-/*    border-radius: 25px;*/
-/*    !*width: 0%;*!*/
-/*    width: 600px;*/
-/*    height: 300px;*/
-/*    display: flex;*/
-/*    padding-top: 100px;*/
-/*    padding-left: 20px;*/
-/*    position: relative;*/
-/*}*/
-
-
 .first-box.changed img {
     animation: moveImageLeft 0.5s ease-out;
 }
@@ -183,6 +132,8 @@
 .second-box.changed img {
     animation: moveImageRight 0.5s ease-out;
 }
+
+
 
 /* Стрелки по бокам */
 .arrow {
@@ -228,11 +179,56 @@
 
 
 
+/*.image-video-container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+
+/*    overflow: hidden;*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    height: 57vh; !* Размер контейнера *!*/
+/*    transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+/*}*/
+
+/*.image-video {*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.image {*/
+/*    width: 100%;*/
+/*    object-fit: cover;*/
+/*    display: flex;*/
+/*    position: relative;*/
+/*    transition: transform 0.5s ease-in-out;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.background-video {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    background-color: #d36b6b;*/
+/*    position: absolute;*/
+/*    width: 75%;*/
+/*    height: 80%;*/
+/*    top: 0;*/
+/*    !**!*/
+/*    z-index: -1;*/
+/*    transform: translateY(7%);*/
+/*}*/
+
 
 .image-video-container {
     display: flex;
     justify-content: center;
     align-items: center;
+
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -240,47 +236,39 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Контейнер с изображением iPhone */
 .image-container {
     position: relative;
-    width: 100%;
+    width: 275px !important;
+    height: 500px !important;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Изображение iPhone */
 .image {
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    display: flex;
-    position: relative;
-    transition: transform 0.5s ease-in-out;
-    align-items: center;
-    justify-content: center;
+    z-index: 1;
 }
 
+/* Блок для экрана iPhone */
 .image-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    width: 75%;
-    height: 80%;
-    top: 0;
-    z-index: -1;
-    transform: translateY(7%);
+    width: 76%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 20px; /* Скругление углов экрана */
 }
 
+/* Видео внутри экрана */
 .image-video {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    position: absolute;
-    /**/
-    z-index: -1;
+    object-fit: cover; /* Видео будет заполнять экран без искажения пропорций */
 }
-
-
-

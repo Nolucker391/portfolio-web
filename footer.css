@@ -1,89 +1,108 @@
-/*!* Контейнер, в котором будет находиться текст *!*/
-/*body {*/
-/*    padding: 0 5%; !* Добавляем отступы по бокам *!*/
-/*    background: #222;*/
-/*    scroll-behavior: smooth; !* Плавные переходы *!*/
-/*}*/
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+}
 
-/*.subtitle-container {*/
-/*    width: 100%;*/
-/*    height: 50vh;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*}*/
-
-/*.container {*/
-/*    color: #e5e5e5;*/
-/*    font-size: 2.26rem;*/
-/*    text-transform: uppercase;*/
-/*    height: 100vh;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
-
-/*.animation {*/
-/*    height:50px;*/
-/*    overflow:hidden;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*}*/
-
-/*.animation > div {*/
-/*    padding: 0.25rem 0.75rem;*/
-/*    height:2.81rem;*/
-/*    margin-bottom: 2.81rem;*/
-/*    display:flex;*/
-/*}*/
-
-/*.animation div:first-child {*/
-/*    animation: text-animation 8s infinite;*/
-/*}*/
-
-/*@keyframes text-animation {*/
-/*    0% {margin-top: 0;}*/
-/*    10% {margin-top: 0;}*/
-/*    20% {margin-top: -5.62rem;}*/
-/*    30% {margin-top: -5.62rem;}*/
-/*    40% {margin-top: -11.24rem;}*/
-/*    60% {margin-top: -11.24rem;}*/
-/*    70% {margin-top: -5.62rem;}*/
-/*    80% {margin-top: -5.62rem;}*/
-/*    90% {margin-top: 0;}*/
-/*    100% {margin-top: 0;}*/
-/*}*/
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background: #222;
-    font-family: 'Arial', sans-serif;
+    background-color: #5a5252;
+}
+
+/* Контейнер с изображением iPhone */
+.iphone-container {
+    position: relative;
+    width: 375px; /* Ширина iPhone 15 (можно адаптировать под другие устройства) */
+    height: 700px; /* Высота iPhone 15 */
+    border-radius: 50px;
     overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.masked-text {
-    font-size: 6rem;
-    font-weight: bold;
-    color: transparent;
-    background-image: url('https://images.unsplash.com/photo-1732535725600-f805d8b33c9c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: 200%; /* Enlarged for smooth animation */
-    background-position: 0 50%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animate-background 5s infinite alternate linear;
+/* Изображение iPhone */
+.iphone-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
 }
 
-@keyframes animate-background {
-    0% {
-        background-position: 0 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
+/* Блок для экрана iPhone */
+.iphone-screen {
+    position: absolute;
+    width: 80%; /* Ширина экрана устройства */
+    height: 93%; /* Высота экрана устройства */
+    overflow: hidden;
+    border-radius: 20px; /* Скругление углов экрана */
 }
 
+/* Видео внутри экрана */
+.iphone-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Видео будет заполнять экран без искажения пропорций */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!* 🔹 Адаптация под планшеты (от 768px до 1024px) *!*/
+/*@media (max-width: 1024px) {*/
+/*    .iphone-container {*/
+/*        width: 320px;*/
+/*        height: 600px;*/
+/*    }*/
+/*}*/
+
+/*!* 🔹 Адаптация под мобильные телефоны (от 480px до 767px) *!*/
+/*@media (max-width: 767px) {*/
+/*    .iphone-container {*/
+/*        width: 275px;*/
+/*        height: 500px;*/
+/*    }*/
+
+/*    .iphone-screen {*/
+/*        width: 76%;*/
+/*        height: 90%;*/
+/*    }*/
+/*}*/
+
+/*!* 🔹 Адаптация под очень маленькие экраны (до 479px) *!*/
+/*@media (max-width: 479px) {*/
+/*    .iphone-container {*/
+/*        width: 230px;*/
+/*        height: 420px;*/
+/*    }*/
+
+/*    .iphone-screen {*/
+/*        width: 74%;*/
+/*        height: 88%;*/
+/*    }*/
+/*}*/

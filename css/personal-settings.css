@@ -1,56 +1,115 @@
-.special-style .background-video, .special-style-for4 .background-video {
-    border-radius: 14px;
-    width: 28.5% !important;
-    height: 30vh !important;
-    position: absolute;
-    /*transform: translate(207px, -28px); !* X = 207px, Y = 50px *!*/
-}
-
-
-.special-style .content-box, .special-style-for4 .content-box {
+.special-style .content-box {
     flex-direction: row;
     padding: 10vh !important;
 }
 
-
-.special-style .image, .special-style-for4 .image {
-    padding-bottom: 10vh !important;
-    transition: transform 0.5s ease-in-out;
-    transform: scale(1.1); /* Увеличение изображения */
+.special-style .image-container {
+    position: relative;
+    width: 450px !important; /* Ширина iPhone 15 (можно адаптировать под другие устройства) */
+    height: 450px !important; /* Высота iPhone 15 */
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.special-style .about-text h2 {
-    transform: translateY(-10vh) !important;
-    font-size: calc(2.5vw + 3vh);
+/* Изображение iPhone */
+.special-style .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
 }
 
-.special-style .about-text p {
-    transform: translateX(100px);
+/* Блок для экрана iPhone */
+.special-style .image-screen {
+    position: absolute;
+    width: 85%; /* Ширина экрана устройства */
+    height: 93%; /* Высота экрана устройства */
+    overflow: hidden;
+    border-radius: 20px; /* Скругление углов экрана */
+    translate: unset !important;
+    top: -2%;
+}
+
+/* Видео внутри экрана */
+.special-style .image-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Видео будет заполнять экран без искажения пропорций */
+    background: unset !important;
+}
+
+/*Мой рабочий экран: Ширина: 1143px, Высота: 1069px*/
+/*HD 1280×720 (16:9)*/
+/*WXGA 1366×768 (16:9)*/
+/*Full HD 1920×1080 (16:9)*/
+/*WQHD 2560×1440 (16:9)*/
+/*!*macbook 2560 - 1600*/
+
+@media (min-width: 1411px) and (max-width: 2444px) {
+    .special-style .image-container {
+        width: 320px !important;
+        height: 600px !important;
+    }
+    .special-style .image-screen {
+        width: 80% !important;
+        height: 93% !important;
+        transform: translate(-50%, -50%); /* Центрируем экран */
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@media (min-width: 1055px) and (max-width: 1410px) {
+    .special-style .image-container {
+        width: 320px !important;
+        height: 420px !important;
+    }
+    .special-style .image-screen {
+        width: 82% !important;
+        height: 93% !important;
+        transform: translate(-50%, -50%); /* Центрируем экран */
+        top: 50%;
+        left: 50%;
+    }
+    .special-style .about-text h2 {
+        font-size: calc(2vh + 2vw);
+    }
+    .special-style .about-text p {
+        font-size: calc(1.5vh + 1.5vw);
+    }
 }
 
 
-
-.special-style-for4 .about-text h2 {
-    transform: translateY(-10vh) !important;
-    font-size: calc(2.5vw + 1.5vh);
+@media (min-width: 744px) and (max-width: 1047px) {
+    .special-style .content-box {
+        flex-direction: column-reverse;
+        padding: 10vh !important;
+    }
+    .special-style .image-container {
+        width: 320px !important;
+        height: 420px !important;
+    }
+    .special-style .image-screen {
+        width: 57% !important;
+        height: 93% !important;
+        transform: translate(-50%, -50%); /* Центрируем экран */
+        top: 50%;
+        left: 50%;
+    }
+    .special-style .about-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .special-style .about-text h2 {
+        font-size: calc(2.5vh + 2.5vw);
+    }
+    .special-style .about-text p {
+        font-size: calc(1.5vh + 1.5vw);
+    }
 }
 
-.special-style-for4 .about-text p {
-    transform: translateX(10vh) !important;
-}
-
-
-
-.special-style-for5 .content-box {
-    flex-direction: row;
-    padding-left: 5vh !important;
-}
-
-
-.special-style-for5 .image {
-    width: calc(25vw + 4.5vh);
-}
-
-.special-style-for5 .background-video {
-    width: calc(70% + 3vw);
-}
