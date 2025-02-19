@@ -5,7 +5,7 @@
 
 <hr />
 
-<img src="assets/images/skills/JavaSCRP" alt="Demo" width="200" height="50">
+<img src="assets/images/skills/javaSCRP.png" alt="Demo" width="200" height="30">
 
 
 
