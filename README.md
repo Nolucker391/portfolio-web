@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>WEB - Portfolio</h1>
   <img src="/assets/images/logo.png" alt="Demo" width="300" height="250">
+  <h1>WEB - Portfolio</h1>
 </div>
 
 <hr />
