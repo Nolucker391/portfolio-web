@@ -1,7 +1,11 @@
-<div align="center">
-  <h1>WEB - Portfolio</h1>
-  <img src="/assets/images/logo.png" alt="Demo" width="300" height="250">
-</div>
+<h1 align="center">WEB - Portfolio
+
+<br>
+<br>
+
+<img src="/assets/images/logo.png" alt="Demo" width="300" height="250">
+
+</h1>
 
 <hr />
 
