@@ -20,14 +20,14 @@ window.addEventListener("resize", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const content = [
-        // {
-        //     number: "01",
-        //     title: "MeGAno - sHop",
-        //     description: "Интернет - магазин Мегано.",
-        //     videoSrc: "../assets/movies/MeganoShop.mp4",
-        //
-        //     imgSrc: "../assets/images/мак.png",
-        // },
+        {
+            number: "01",
+            title: "MeGAno - sHop",
+            description: "Интернет - магазин Мегано.",
+            videoSrc: "../assets/movies/MeganoShop.mp4",
+
+            imgSrc: "../assets/images/мак.png",
+        },
         {
             number: "02",
             title: "Mobile - App",
@@ -35,27 +35,27 @@ document.addEventListener("DOMContentLoaded", () => {
             videoSrc: "../assets/movies/app.mp4",
             imgSrc: "../assets/images/phone.png",
         },
-        // {
-        //     number: "03",
-        //     title: "tWitteR - clone",
-        //     description: "Микросервис - с функционалом твиттера.",
-        //     videoSrc: "../assets/movies/Twitter-flask.mp4",
-        //     imgSrc: "../assets/images/мак.png",
-        // },
-        // {
-        //     number: "04",
-        //     title: "teleGRAM - boT",
-        //     description: "Бот - для поиска актуальных отелей.",
-        //     videoSrc: "../assets/movies/telegram.mp4",
-        //     imgSrc: "../assets/images/phone.png",
-        // },
-        // {
-        //     number: "05",
-        //     title: "siMplE - WEb",
-        //     description: "Первое знакомство с html/css.",
-        //     videoSrc: "../assets/movies/simpleWEB",
-        //     imgSrc: "../assets/images/iMac1.png",
-        // },
+        {
+            number: "03",
+            title: "tWitteR - clone",
+            description: "Микросервис - с функционалом твиттера.",
+            videoSrc: "../assets/movies/Twitter-flask.mp4",
+            imgSrc: "../assets/images/мак.png",
+        },
+        {
+            number: "04",
+            title: "teleGRAM - boT",
+            description: "Бот - для поиска актуальных отелей.",
+            videoSrc: "../assets/movies/telegram.mp4",
+            imgSrc: "../assets/images/phone.png",
+        },
+        {
+            number: "05",
+            title: "siMplE - WEb",
+            description: "Первое знакомство с html/css.",
+            videoSrc: "../assets/movies/simpleWEB.mp4",
+            imgSrc: "../assets/images/iMac1.png",
+        },
     ];
 
     let currentIndex = 0;

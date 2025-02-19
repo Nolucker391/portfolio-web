@@ -4,7 +4,7 @@
     align-items: flex-end;
     position: absolute;
     top: 0;
-    transform: translateY(-125%) translateX(5%);
+    transform: translateY(-115%) translateX(5%);
     gap: 10px;
 }
 
