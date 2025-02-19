@@ -1,6 +1,10 @@
+<div align="center">
+  <h1>WEB - Portfolio</h1>
+  <img src="/assets/images/logo.png" alt="Demo" width="300" height="250">
+</div>
 
-<img src="/assets/images/logoME.png" alt="Demo" width="250" height="250">
-<sup>WEB - Portfolio</sup>
+<hr />
+
 
 
 https://github.com/user-attachments/assets/ee3d20bb-003d-4239-b60e-c1a3da054100
