@@ -5,8 +5,7 @@
 
 <hr />
 
-<img src="assets/images/skills/javaSCRP.png" alt="Demo" width="200" height="30"> <img src="assets/images/skills/HTML5.png" alt="Demo" width="200" height="30"> <img src="assets/images/skills/CSS 4.15_.png" alt="Demo" width="200" height="30">
-
+<img src="assets/images/skills/javaSCRP.png" alt="Demo" width="200" height="30"> <img src="assets/images/skills/HTML5.png" alt="Demo" width="200" height="30"> <img src="assets/images/skills/CSS 4.15_.png" alt="Demo" width="200" height="30"> <img src="assets/images/skills/webst.png" alt="Demo" width="200" height="30">
 
 ## Описание
 
